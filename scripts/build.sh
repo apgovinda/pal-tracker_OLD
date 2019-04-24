@@ -17,10 +17,6 @@ echo $build_output
 echo "----------------------------------"
 cp scripts/migrate-databases.sh $build_output
 cp -r databases $build_output
-<<<<<<< HEAD
-=======
-
->>>>>>> b6c6ce592dba3d38f12c0a5926eeee44dfbc6cce
 dotnet publish src/PalTracker --configuration Release \
     --output $build_output/src/PalTracker/bin/Release/netcoreapp2.2/publish
 
