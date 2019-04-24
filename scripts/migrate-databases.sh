@@ -5,7 +5,6 @@ set -e
 app_guid=`cf app $1 --guid`
 echo " appguid : $app_guid "
 
-echo `jq`
 
 credentials=`cf curl /v2/apps/$app_guid/env | jq '.system_env_json.VCAP_SERVICES | if .["p-mysql"] != null then .["p-mysql"] else .["cleardb"] end | .[0].credentials'`
 

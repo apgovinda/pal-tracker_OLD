@@ -1,0 +1,14 @@
+cf curl /v2/apps/0be9980d-985a-41e6-9470-d3f713917daf/env | jq '.system_env_json.VCAP_SERVICES | if .["p-mysql"] != null then .["p-mysql"] else .["p.mysql"] end | .[0].credentials'
+
+
+
+
+credentials=`cf curl /v2/apps/$app_guid/env | jq '.system_env_json.VCAP_SERVICES | if .["p-mysql"] != null then .["p-mysql"] else .["p.mysql"] end | .[0].credentials'`
+
+credentials=`cf curl /v2/apps/$app_guid/env | jq '.system_env_json.VCAP_SERVICES | if .["p-mysql"] != null then .["p-mysql"] else .["p.mysql"] end | .[0].credentials'`
+
+cf curl /v2/apps/7212a903-1bc4-47ab-8d70-025166cbdf20/env 
+
+
+
+

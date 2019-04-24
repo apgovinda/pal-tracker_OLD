@@ -12,8 +12,7 @@ mkdir -p $build_output
 mkdir -p $artifacts_path
 
 cp manifest-*.yml $build_output
-echo "------------ build_output : $build_output--------------" 
-echo "--------------DOLOR-1 : $1--------"
+
 cp scripts/migrate-databases.sh $build_output
 cp -r databases $build_output
 
