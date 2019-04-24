@@ -1,0 +1,29 @@
+Get all time entries
+====================
+curl -i https://pal-tracker-prod-govindh.cfapps.io/time-entries
+
+
+Create a time entry
+======================
+curl -i -XPOST -H"Content-Type: application/json" https://pal-tracker-prod-govindh.cfapps.io/time-entries -d"{\"projectId\": 1, \"userId\": 2, \"date\": \"2019-01-01\", \"hours\": 8}"
+
+curl -i -XPOST -H"Content-Type: application/json" https://pal-tracker-prod-govindh.cfapps.io/time-entries -d"{\"projectId\": 2, \"userId\": 3, \"date\": \"2019-02-02\", \"hours\": 10}"
+
+curl -i -XPOST -H"Content-Type: application/json" https://pal-tracker-prod-govindh.cfapps.io/time-entries -d"{\"projectId\": 3, \"userId\": 4, \"date\": \"2019-03-03\", \"hours\": 12}"
+
+
+Get a time entry by ID
+======================
+curl -i https://pal-tracker-prod-govindh.cfapps.io/time-entries/1
+
+
+Update a time entry by ID
+===============================
+curl -i -XPUT -H"Content-Type: application/json" https://pal-tracker-prod-govindh.cfapps.io/time-entries/1 -d"{\"projectId\": 88, \"userId\": 99, \"date\": \"2019-01-01\", \"hours\": 8}"
+
+
+Delete a time entry by ID
+==========================
+curl -i -XDELETE -H"Content-Type: application/json" https://pal-tracker-prod-govindh.cfapps.io/time-entries/1
+
+
