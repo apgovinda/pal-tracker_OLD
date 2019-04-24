@@ -10,7 +10,7 @@ credentials=`cf curl /v2/apps/$app_guid/env | jq '.system_env_json.VCAP_SERVICES
 
 echo "printing credentials... "
 echo "credentials : $credentials "
-echo "dolor 1  : $1 "
+
 
 
 ip_address=`echo $credentials | jq -r '.hostname'`
