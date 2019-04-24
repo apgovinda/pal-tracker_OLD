@@ -14,6 +14,6 @@ mkdir -p $artifacts_path
 cp manifest-*.yml $build_output
 
 dotnet publish src/PalTracker --configuration Release \
-    --output $build_output/src/PalTracker/bin/Release/netcoreapp2.1/publish
+    --output $build_output/src/PalTracker/bin/Release/netcoreapp2.2/publish
 
 tar -C $build_output/ -cvzf $artifacts_path/pal-tracker-$version.tgz .
