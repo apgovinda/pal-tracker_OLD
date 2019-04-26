@@ -11,4 +11,3 @@ namespace PalTracker
         public DbSet<TimeEntryRecord> TimeEntryRecords { get; set; }
     }
 }
-

@@ -32,4 +32,3 @@ namespace PalTracker
         public string Id { get; } = "timeEntry";
     }
 }
-

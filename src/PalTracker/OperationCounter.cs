@@ -29,4 +29,3 @@ namespace PalTracker
         public string Name => $"{typeof(T).Name}Operations";
     }
 }
-
